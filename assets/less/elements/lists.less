@@ -1,0 +1,21 @@
+ul{
+	li{	padding: 5px 7px;
+		list-style: none;
+		}
+	&.bullet{
+		li{
+			 list-style-type: square;
+			 list-style-position: inside;
+			 list-style-image: none;
+		}
+	}
+	&.boxed{
+		li{
+			margin: auto;
+			list-style: none;
+			margin-bottom: 3px;
+			background: #eee;
+			&:hover{background: #e8e8e8;}
+		}
+	}
+}

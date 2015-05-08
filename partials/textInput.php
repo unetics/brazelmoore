@@ -1,0 +1,1 @@
+<input type="text" id="<?= $this->get_field_id($name); ?>" name="<?= $this->get_field_name($name); ?>" class="form-control" <?= $placeholder ?> value="<?= $instance["$name"] ?>">

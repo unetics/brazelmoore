@@ -1,0 +1,35 @@
+li.event{
+	padding: 0;
+	h3{
+		font-size: 15px;
+		line-height: 22px;
+		display: block;
+		background: @brand-primary;
+		padding: 5px;
+		color: white;
+		border-top: 2px solid darken(@brand-primary, 20%);
+	}
+	a{
+		display: block;
+		background: #eee;
+		margin: 5px 0;
+		&:hover{
+			background: #cfcfcf;
+			h3{
+				border-top: 2px solid lighten(@brand-primary, 20%);
+			}
+		}
+	}
+	ul li{
+		font-size: 14px;
+		padding: 0 5px;
+		color: #777;
+	}
+}
+
+
+.container{
+	max-width: 1020px;
+	margin: auto;
+	padding-top: 50px;
+}

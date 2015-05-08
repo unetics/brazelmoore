@@ -1,0 +1,42 @@
+//
+// Tiles - new way
+// -------------------------------------------------
+
+.tile, .widget_tile{
+  background-color:white;
+  border-radius: @border-radius-base;
+  box-shadow: 0px 0px 2px 0px #6d6d6d;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  li{
+	  font-size: 14px;
+  }
+  &.mh360{
+	  min-height: 360px;
+  }
+  .panel-grid-cell{
+	  padding: 5px !important;
+  }
+	.btn{
+		&.block{
+			margin: 0 0 5px;
+			padding: 10px 30px;
+			box-shadow: 0px 0px 2px 0px #6d6d6d;
+			background: @brand-primary;
+		}
+		&:hover{
+			background: darken(@brand-primary, 20%);
+			border-top: 2px solid lighten(@brand-primary, 20%);
+		}
+	}
+	.widget_widget_sp_image {
+		margin: 0;
+	}
+	p{
+		font-size: 15px;
+		padding: 10px;
+	}
+}
+
+

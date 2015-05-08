@@ -1,0 +1,81 @@
+//
+// Buttons
+// --------------------------------------------------
+button{
+	margin-bottom: 10px;
+	&.block{
+    display: block;
+    
+}}
+.btn {
+  border: none;
+  font-size: @btn-font-size-base;
+  font-weight: @btn-font-weight;
+  line-height: @btn-line-height-base;
+  border-radius: @border-radius-base;
+  padding: @btn-padding-v  @btn-padding-h;
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+  display: inline-block;
+  text-align: center;
+  span{
+	  color: @btn-primary-color;
+  }
+  &.left{
+	  float: left;
+  }
+  &.right{
+	  float: right;
+  } 
+  &.center{
+  	  display: table;
+	  margin: auto;
+  }
+  &.block {
+  white-space: normal;
+  display: block;
+  } 
+   
+  &.primary {
+	  color: white;
+	  background-color: black;
+	  border-top: 2px solid #777;
+	    &:hover,
+		&:focus {
+			color: white;
+			background: #222;
+			border-top: 2px solid @btn-primary-color;
+				}
+	  }
+  &.secondary {
+	  color: @body-bg;
+	  background-color: @btn-secondary-color;
+	    &:hover,
+		&:focus {
+			color: white;
+			background: fade(@btn-secondary-color, 70);
+				}
+	  }
+  &.ghost {
+	  color: @btn-primary-color;
+	  background-color: none;
+	  background: none;
+	  border: solid 2px @btn-primary-color;
+	    &:hover,
+		&:focus {
+			color: @body-bg;
+			background: @btn-primary-color;
+				}
+		  }
+  &.link {
+	  color: @btn-primary-color;
+	  background-color: none;  
+	  padding: @btn-padding-v 0;
+	  	&:hover,
+	  	&:focus {
+		    text-decoration: underline;
+		    background-color: transparent;
+		    color: darken(@btn-primary-color, 70);
+		  		}
+  		}
+}
