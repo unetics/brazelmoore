@@ -1,10 +1,14 @@
+<?php
+	$position = tr_post_field("[position]", $member);
+	$credentials = tr_post_field("[credentials]", $member);
+	$about_bio = tr_post_field("[about_bio]", $member);
+	?>
 <article class="team-member">
 	<?= wp_get_attachment_image(tr_post_field("[photo]", $member), 'full');?>
 	<h3><?= get_the_title($member); ?></h3>
-	<p><?= tr_post_field("[position]", $member);?>
-	<span><?= tr_post_field("[credentials]", $member);?></span></p>
-	<p><?= tr_post_field("[about_bio]", $member);?></p>
-	<p class="about-contacts"></p>
+	<?= isset($position) ? '<p>'.$position.'</p>': ''; ?>
+	<?= isset($credentials) ? '<span>'.$credentials.'</span>': ''; ?>
+	<?= isset($about_bio) ? '<p>'.$about_bio.'</p>': ''; ?>
 </article>
 <style type="text/css" media="screen">
 	.team-member{
@@ -17,9 +21,10 @@
 	}
 	.team-member h3{
 		font-size: 25px;
-		padding: 5px 20px 0;
-		margin: 0 0 -3px;
+		padding: 7px 20px ;
+		margin: 0 20% ;
 		position: relative;
 		border-bottom: 2px solid red;
 	}
 </style>
+
