@@ -6,9 +6,9 @@
 <article class="team-member">
 	<?= wp_get_attachment_image(tr_post_field("[photo]", $member), 'full');?>
 	<h3><?= get_the_title($member); ?></h3>
-	<?= isset($position) ? '<p>'.$position.'</p>': ''; ?>
-	<?= isset($credentials) ? '<span>'.$credentials.'</span>': ''; ?>
-	<?= isset($about_bio) ? '<p>'.$about_bio.'</p>': ''; ?>
+	<?= !empty($position) ? '<p>'.$position.'</p>': ''; ?>
+	<?= !empty($credentials) ? '<span>'.$credentials.'</span>': ''; ?>
+	<?= !empty($about_bio) ? '<p>'.$about_bio.'</p>': ''; ?>
 </article>
 <style type="text/css" media="screen">
 	.team-member{

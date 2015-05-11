@@ -24,7 +24,7 @@
 			}
 			var $menulist = $(this).children('.rmm-main-list').html();
 			var $menucontrols ="<div class='rmm-toggled-controls'><div class='rmm-toggled-title'>" + menutitle + "</div><div class='rmm-button'><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div></div>";
-			$(this).prepend("<div class='rmm-toggled rmm-closed'>"+$menucontrols+"<ul>"+$menulist+"</ul></div>");
+			$(this).prepend("<div class='rmm-toggled rmm-closed'>"+$menucontrols+"<div class='rmm-toggled-items'><ul>"+$menulist+"</ul></div></div>");
 	
 		});
 	}
@@ -43,6 +43,10 @@
 				$(this).children('.rmm-toggled').hide(0);
 			}
 		});		
+		//  Set scroll if menu too tall	
+		var $height = $(window).height() - $('.rmm-toggled-controls').height();	
+		$('.rmm-toggled-items').css('maxHeight', $height+'px');
+		$('.rmm-toggled-items').css('overflow', 'scroll');
 	}
 	
 	jQuery(function() {

@@ -122,13 +122,14 @@ if (class_exists('EM_Events')) {
 				</p>
 			</div>
 			<div class="tile">
-				<p><strong>Book Your Space</strong></p>
+				<p><strong>Reserve Your Seats</strong></p>
 				#_BOOKINGFORM
 			</div>
 		</div>
 	</div>
 	<div class="map">#_LOCATIONMAP</div>
-	') );
+	',
+	'limit'=>1) );
 }
 ?>
 </div>
