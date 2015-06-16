@@ -26,6 +26,7 @@ wp_nav_menu( $defaults );
 <li class="searchTrigger">
 <a href="#"><?= do_shortcode('[icon]'); ?></a>
 </li>
+
 	</ul>
 	<form method="get" id="searchform" class="hidden" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 	<input type="text" name="s" id="searchbar" placeholder="Search" /><a href="#" id="searchClose">X</a>
@@ -34,6 +35,9 @@ wp_nav_menu( $defaults );
 </nav>
 
 <style type="text/css" media="screen">
+	.rmm-toggled .searchTrigger{
+		display: none !important;
+	}
 .searchTrigger a{
 	padding: 0px;
 	padding-right: 20px;
