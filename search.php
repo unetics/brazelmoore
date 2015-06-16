@@ -3,6 +3,46 @@
 	
 ?>
 <body>
+	<style type="text/css" media="screen">
+		.displayResult{
+			  font-size: 16px;
+  padding: 12px;
+  color: #99CFBD;
+  }
+		.post-title h4{
+			font-size: 22px;
+			padding: 5px 0;
+		}
+		.post-excerpt p{
+			font-size: 16px;
+		}
+		.section_wrapper{
+			width: 80%;
+			margin: auto;
+		}
+		.result{
+			background: white;
+			box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.53);
+			margin-bottom: 20px;
+			padding: 20px;
+		}
+		.pagination{
+			margin:10px;
+		}
+		.page-numbers{
+			padding: 5px 7px;
+			background: white;
+			box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.53);
+			
+		}
+		.page-numbers.current{
+			background: #93CFBD;
+			color: white;
+		}
+		
+	</style>
+	
+	
 	<?php get_template_part( 'nav/init' ); ?>
 	<main>
 		  <?php   
@@ -86,43 +126,6 @@
 	</div>
 </div>
 	</main>
-	<style type="text/css" media="screen">
-		.displayResult{
-			  font-size: 16px;
-  padding: 12px;
-  color: #99CFBD;
-  }
-		.post-title h4{
-			font-size: 22px;
-			padding: 5px 0;
-		}
-		.post-excerpt p{
-			font-size: 16px;
-		}
-		.section_wrapper{
-			width: 80%;
-			margin: auto;
-		}
-		.result{
-			background: white;
-			box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.53);
-			margin-bottom: 20px;
-			padding: 20px;
-		}
-		.pagination{
-			margin:10px;
-		}
-		.page-numbers{
-			padding: 5px 7px;
-			background: white;
-			box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.53);
-			
-		}
-		.page-numbers.current{
-			background: #93CFBD;
-			color: white;
-		}
-		
-	</style>
+	
 
 <?php get_footer(); ?>
