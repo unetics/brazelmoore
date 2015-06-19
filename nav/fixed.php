@@ -48,7 +48,10 @@ wp_nav_menu( $defaults );
 	
 #searchform{
 	position: absolute;
-	width: 100%; 
+	width: 50%;
+	max-width: 350px;
+	right: 0; 
+	
   transition: transform .2s linear;
   transform-origin: center top 0px;
   transform: translate(0px, 0px) rotateX(0deg) perspective(400px);
