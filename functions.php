@@ -48,3 +48,8 @@ function ps_add_extra_styles($styles) {
 }
 add_filter('ps_add_styles', 'ps_add_extra_styles');
 
+function add_theme_widgets_collection($folders){
+    $folders[] = get_stylesheet_directory( __FILE__ )."/widgets/";
+    return $folders;
+}
+add_filter('siteorigin_widgets_widget_folders', 'add_theme_widgets_collection');
