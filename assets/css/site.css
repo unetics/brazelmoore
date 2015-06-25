@@ -767,6 +767,147 @@ fieldset[disabled] .form-control {
 .posts p {
   font-size: 15px;
 }
+.entry {
+  position: relative;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+.entry-image {
+  margin-bottom: 30px;
+}
+.entry-image,
+.entry-image > a,
+.entry-image .slide a,
+.entry-image img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.entry-title h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.entry-title h2 a {
+  color: #333;
+}
+.entry-title h2 a:hover {
+  color: #93cfbd;
+}
+.entry-meta {
+  list-style: none;
+}
+.entry-meta li {
+  float: left;
+  font-size: 13px;
+  line-height: 14px;
+  margin: 0 10px 15px 0;
+  color: #999;
+  font-style: italic;
+}
+.entry-meta li:before {
+  content: '/';
+  display: inline-block;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+.entry-meta li i {
+  position: relative;
+  top: 1px;
+  font-size: 14px;
+  margin-right: 3px;
+}
+.entry-meta li a {
+  color: #999;
+}
+.entry-meta li a:hover {
+  color: #93cfbd;
+}
+.entry-meta li:first-child:before {
+  display: none;
+}
+.entry-meta li ins {
+  font-weight: 600;
+  text-decoration: none;
+}
+body:not(.device-touch) .entry-link {
+  -webkit-transition: background-color 0.3s ease-in-out;
+          transition: background-color 0.3s ease-in-out;
+}
+.morePlease {
+  width: 100%;
+  margin: 20px 0;
+}
+.masonry {
+  margin: 0;
+}
+.item {
+  display: block;
+  float: left;
+  box-sizing: border-box;
+  margin: 1%;
+  width: 98%;
+  padding: 28px;
+  background-color: #fff;
+  height: 300px;
+  overflow: hidden;
+}
+.one-col .entry-image {
+  width: 30%;
+  float: left;
+}
+.one-col .entry-info {
+  width: 70%;
+  padding: 3%;
+  float: left;
+}
+.two-col .item {
+  width: 46%;
+  height: 600px;
+}
+.more-link {
+  position: absolute;
+  width: 100%;
+  padding: 10px;
+  background: #93cfbd;
+  color: white;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 780px) {
+  .entry-info,
+  .entry-image {
+    width: 100% !important;
+  }
+}
+.pagination {
+  clear: both;
+  padding: 20px 0;
+  position: relative;
+  font-size: 11px;
+  line-height: 13px;
+}
+.pagination span,
+.pagination a {
+  display: block;
+  float: left;
+  margin: 2px 2px 2px 0;
+  padding: 6px 9px 5px 9px;
+  text-decoration: none;
+  width: auto;
+  color: #fff;
+  background: #555;
+}
+.pagination a:hover {
+  color: #fff;
+  background: #3279BB;
+}
+.pagination .current {
+  padding: 6px 9px 5px 9px;
+  background: #3279BB;
+  color: #fff;
+}
 #header {
   position: relative;
   padding: 20px 30px 10px;
@@ -5353,4 +5494,13 @@ main {
 input[type="button"],
 input[type="submit"] {
   cursor: pointer;
+}
+.post_content {
+  padding-bottom: 20px;
+}
+.post_content li {
+  list-style: circle inside;
+}
+.post_content p {
+  padding: 12px 0;
 }

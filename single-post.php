@@ -3,8 +3,9 @@
 	<?php get_template_part( 'nav/init' ); ?>
 	<main>
 		<div class="container">
-			<?php the_content();?>
-			<br/><br/>
+			<div class="post_content">
+				<?php the_content();?>
+			</div>
 		</div>
 	</main>
 <?php get_footer(); ?>
